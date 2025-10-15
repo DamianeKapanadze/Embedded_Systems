@@ -28,3 +28,4 @@ TOP = (Clock Frequency / (Prescaler × Target Frequency)) - 1
 
 This configuration gives a **PWM frequency of 1 kHz**.
 
+![Timer Image](HW2_Timers/20251015_154613.jpg)
