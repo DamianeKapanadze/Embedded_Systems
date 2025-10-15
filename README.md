@@ -10,3 +10,13 @@
     e. Write the `loop` function that updates the duty cycle, counting from 0% to 100%, then back down to 0% (repeating). The delay between duty cycle changes should be **100ms**.  
     f. Implement a `#define` that allows the developer to change the **max duty cycle** to any value between 0% and 100%.  
     g. Use the **Digilent Discovery Waveform Application** in **Oscilloscope Mode** to screen capture your PWM signal and attach it to the assignment. Verify your design by observing the measurements (**DutyCycle, Average**, etc.) using the **Add Measure** feature of Waveforms, like we did in class.
+
+# Solutions
+
+I used **OCR1A** as the **TOP** value, and **OCR1B** as the **compare match (duty cycle)** register.
+
+### 🛠️ Frequency Calculation
+
+To generate a **1 kHz PWM signal**, I used the formula:
+
+
