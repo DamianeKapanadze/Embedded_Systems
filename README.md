@@ -15,8 +15,16 @@
 
 I used **OCR1A** as the **TOP** value, and **OCR1B** as the **compare match (duty cycle)** register.
 
-### 🛠️ Frequency Calculation
+### Frequency Calculation
 
 To generate a **1 kHz PWM signal**, I used the formula:
 
+TOP = (Clock Frequency / (Prescaler × Target Frequency)) - 1
+
+- **Clock frequency**: 8 MHz  
+- **Prescaler**: 1  
+- **Target frequency**: 1 kHz  
+- **Resulting TOP (OCR1A)**: 7999
+
+This configuration gives a **PWM frequency of 1 kHz**.
 
